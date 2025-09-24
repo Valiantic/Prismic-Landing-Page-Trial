@@ -1,4 +1,5 @@
-"use client";
-import HomeAirtableMain from "@/pages/homes/home-airtable";
+import { redirect } from 'next/navigation'
 
-export default HomeAirtableMain;
+export default function HomePage() {
+  redirect('/ai-workflow-templates')
+}

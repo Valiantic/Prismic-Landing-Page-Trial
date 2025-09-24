@@ -35,10 +35,21 @@ const ErrorMain = () => {
                       <Image src={error} alt="error-img" style={{ height: 'auto' }} />
                       <div className="tp-error-content">
                         <h4 className="tp-error-title-sm">
-                          Something went Wrong...
+                          Landing Page Not Found
                         </h4>
-                        <p>Sorry, we {"couldn't"} find your page.</p>
-                        <Link className="tp-btn-black-2" href="/">
+                        <p>The landing page you are looking for doesn't exist. Try these available pages:</p>
+                        <div className="d-flex justify-content-center gap-3 flex-wrap mb-4">
+                          <Link className="tp-btn-border" href="/ai-workflow-templates">
+                            AI Templates
+                          </Link>
+                          <Link className="tp-btn-border" href="/productivity-automation">
+                            Automation
+                          </Link>
+                          <Link className="tp-btn-border" href="/data-management-tools">
+                            Data Tools
+                          </Link>
+                        </div>
+                        <Link className="tp-btn-black-2" href="/ai-workflow-templates">
                           Back to Home
                         </Link>
                       </div>

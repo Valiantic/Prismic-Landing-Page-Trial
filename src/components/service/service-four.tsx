@@ -96,6 +96,4 @@ export default function ServiceFour() {
     </div>
   );
 }
->
-  );
-}
+
