@@ -11,6 +11,8 @@ const nextConfig = {
       },
     ],
   },
+  output: undefined,
+  trailingSlash: false,
 };
 
 export default nextConfig;
