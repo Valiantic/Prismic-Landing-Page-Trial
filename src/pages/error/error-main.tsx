@@ -37,7 +37,7 @@ const ErrorMain = () => {
                         <h4 className="tp-error-title-sm">
                           Landing Page Not Found
                         </h4>
-                        <p>The landing page you are looking for doesn't exist. Try these available pages:</p>
+                        <p>The landing page you are looking for doesn&apos;t exist. Try these available pages:</p>
                         <div className="d-flex justify-content-center gap-3 flex-wrap mb-4">
                           <Link className="tp-btn-border" href="/ai-workflow-templates">
                             AI Templates

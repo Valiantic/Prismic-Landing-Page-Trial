@@ -1,20 +1,80 @@
 import { createClient } from '../../prismicio'
 import { PrismicDocument } from '@prismicio/client'
 
+// Shared image interface
+export interface PrismicImage {
+  url: string
+  alt: string | null
+  dimensions?: {
+    width: number
+    height: number
+  }
+}
+
+// Complete landing page data interface
 export interface LandingPageData {
+  // Page Meta
   title?: string
+  
+  // Hero Section
   hero_title?: string
   hero_subtitle?: any
-  hero_image?: {
-    url: string
-    alt: string | null
-    dimensions?: {
-      width: number
-      height: number
-    }
-  }
+  hero_image?: PrismicImage
   cta_text?: string
   cta_link?: string
+  
+  // Gallery Section
+  gallery_title?: string
+  gallery_subtitle?: string
+  gallery_images?: Array<{
+    image?: PrismicImage
+    alt_text?: string
+  }>
+  
+  // About Section
+  about_subtitle?: string
+  about_title?: string
+  about_description_1?: any
+  about_description_2?: any
+  about_image?: PrismicImage
+  about_cta_text?: string
+  about_cta_link?: string
+  
+  // Services Section
+  services_subtitle?: string
+  services_title?: string
+  services_list?: Array<{
+    title?: string
+    description?: any
+    categories?: string
+    icon?: PrismicImage
+  }>
+  
+  // Brand Section
+  brand_images?: Array<{
+    logo?: PrismicImage
+    name?: string
+  }>
+  
+  // Contact Section
+  contact_title?: string
+  contact_description?: any
+  contact_email?: string
+  contact_phone?: string
+  
+  // Projects Section
+  projects_title?: string
+  projects_subtitle?: string
+  projects_cta_text?: string
+  projects_cta_link?: string
+  projects?: Array<{
+    id?: number
+    image_1?: PrismicImage
+    image_2?: PrismicImage
+    meta?: string
+    title?: string
+    link?: string
+  }>
 }
 
 export interface LandingPageDocument extends PrismicDocument {
