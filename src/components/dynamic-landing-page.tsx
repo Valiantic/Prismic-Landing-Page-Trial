@@ -10,14 +10,14 @@ gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother, SplitText);
 import Wrapper from "@/layouts/wrapper";
 import HeaderFive from "@/layouts/headers/header-five";
 import DynamicHeroBanner from "@/components/hero-banner/dynamic-hero-banner";
-import GalleryOne from "@/components/gallery/gallery-one";
-import AboutThree from "@/components/about/about-three";
-import BrandThree from "@/components/brand/brand-three";
-import ProjectFour from "@/components/project/project-four";
+import DynamicGallery from "@/components/gallery/dynamic-gallery";
+import DynamicAbout from "@/components/about/dynamic-about";
+import DynamicBrand from "@/components/brand/dynamic-brand";
+import DynamicServices from "@/components/service/dynamic-services";
+import DynamicContact from "@/components/contact/dynamic-contact";
+import DynamicProject from "@/components/project/dynamic-project";
 import CounterOne from "@/components/counter/counter-one";
 import VideoTwo from "@/components/video/video-two";
-import ServiceFour from "@/components/service/service-four";
-import ContactOne from "@/components/contact/contact-one";
 import FooterFive from "@/layouts/footers/footer-five";
 import { textInvert } from "@/utils/text-invert";
 import { fadeAnimation, revelAnimationOne } from "@/utils/title-animation";
@@ -63,21 +63,21 @@ const DynamicLandingPage = ({ data }: DynamicLandingPageProps) => {
             <DynamicHeroBanner data={data} />
             {/* dynamic hero area end */}
 
-            {/* gallery area start */}
-            <GalleryOne />
-            {/* gallery area end */}
+            {/* dynamic gallery area start */}
+            <DynamicGallery data={data} />
+            {/* dynamic gallery area end */}
 
-            {/* about area start */}
-            <AboutThree />
-            {/* about area end */}
+            {/* dynamic about area start */}
+            <DynamicAbout data={data} />
+            {/* dynamic about area end */}
 
-            {/* brand area start */}
-            <BrandThree />
-            {/* brand area end */}
+            {/* dynamic brand area start */}
+            <DynamicBrand data={data} />
+            {/* dynamic brand area end */}
 
-            {/* project area start */}
-            <ProjectFour />
-            {/* project area end */}
+            {/* dynamic project area start */}
+            <DynamicProject data={data} />
+            {/* dynamic project area end */}
 
             {/* counter area start */}
             <CounterOne />
@@ -87,13 +87,13 @@ const DynamicLandingPage = ({ data }: DynamicLandingPageProps) => {
             <VideoTwo />
             {/* video area end */}
 
-            {/* service area start */}
-            <ServiceFour />
-            {/* service area end */}
+            {/* dynamic service area start */}
+            <DynamicServices data={data} />
+            {/* dynamic service area end */}
 
-            {/* contact area start */}
-            <ContactOne />
-            {/* contact area end */}
+            {/* dynamic contact area start */}
+            <DynamicContact data={data} />
+            {/* dynamic contact area end */}
           </main>
 
           {/* footer area */}
